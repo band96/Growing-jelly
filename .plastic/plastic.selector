@@ -1,0 +1,4 @@
+repository "젤리 키우기/젤리 키우기@14568716443917@cloud"
+  path "/"
+    br "/main"
+    co "/main"
