@@ -2009,6 +2009,10 @@ MonoBehaviour:
   - {x: -3, y: -1, z: -1}
   - {x: 0, y: 0, z: 0}
   - {x: 3, y: -1, z: -1}
+  LevelAc:
+  - {fileID: 9100000, guid: 8c7845f2d3a629943afc1519da279300, type: 2}
+  - {fileID: 9100000, guid: cf4db5108a8b1874692fcde7c19517c8, type: 2}
+  - {fileID: 9100000, guid: 0d3842a994495234589cb6d54c1215e2, type: 2}
 --- !u!4 &1357480088
 Transform:
   m_ObjectHideFlags: 0
@@ -2329,6 +2333,7 @@ GameObject:
   - component: {fileID: 1540235909}
   - component: {fileID: 1540235913}
   - component: {fileID: 1540235912}
+  - component: {fileID: 1540235914}
   m_Layer: 0
   m_Name: Jelly
   m_TagString: Untagged
@@ -2346,7 +2351,7 @@ Animator:
   m_GameObject: {fileID: 1540235908}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0d3842a994495234589cb6d54c1215e2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8c7845f2d3a629943afc1519da279300, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2458,10 +2463,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"SpeedX","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"ID","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Level","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Exp","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"SpeedX","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"SpeedY","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!58 &1540235914
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540235908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.5}
+  m_Radius: 0.5
 --- !u!1 &1562018249
 GameObject:
   m_ObjectHideFlags: 0
